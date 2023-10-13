@@ -74,6 +74,8 @@ class HW5
         }
         catch (Exception e)
         {
+            Console.WriteLine(new StackTrace().GetFrame(1).GetMethod().Name); 
+
             throw new Exception("EXCEPTION", e);
 
         }
